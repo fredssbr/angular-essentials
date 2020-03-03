@@ -7,5 +7,5 @@
   />
 </div>
 <p>Some text here!</p>
-<app-user></app-user>
-<app-dashboard></app-dashboard>
+<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
+<!--<app-dashboard></app-dashboard>-->
