@@ -8,9 +8,19 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-essentials';
   rootName = 'Fred';
+  items = [
+    "Apples",
+    "Bananas",
+    "Cherries"
+  ];
 
   onNameChanged(newName) {
     this.rootName = newName;
+  }
+
+  onAddedItem(newItem) {
+    this.items.push(newItem);
+    console.log(this.items);
   }
 
 }

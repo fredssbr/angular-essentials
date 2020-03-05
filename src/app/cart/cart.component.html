@@ -1,0 +1,4 @@
+<hr>
+<!-- Could use [(ngModel)] instead. Just practice.-->
+<input type="text" placeholder="Add item" (input)="onUserInput($event)" [value]="item">
+<button (click)="onAddItem()">Add item</button>

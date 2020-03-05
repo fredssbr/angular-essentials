@@ -8,4 +8,8 @@
 </div>
 <p>Some text here!</p>
 <app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
+
+<!-- ASSINGMENTS -->
 <!--<app-dashboard></app-dashboard>-->
+<app-cart [items]="items" (addItem)="onAddedItem($event)"></app-cart>
+
